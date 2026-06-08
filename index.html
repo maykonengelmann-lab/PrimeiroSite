@@ -17,6 +17,15 @@
         <p>Por: Maykon </p>
         <P>Boas vindas ao meu blog, aqui vou comprtilhar dicas com você!
         </P>
+        <button>👍​<span>0</span></button>
     </main>
 </body>
+<script>
+    const botao = document.querySelector("button");
+    botao.addEventListener("click", botaoClicado);
+    function botaoClicado(){
+        let texto = botao.querySelector("span");
+        texto.textContent++;
+    }
+</script>
 </html>
